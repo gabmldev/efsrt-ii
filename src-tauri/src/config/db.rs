@@ -23,8 +23,6 @@ pub struct DbEnv {
 
 impl DbEnv {
     pub fn from_env() -> Result<Self, ConfigError> {
-        dotenvy::dotenv().ok();
-
         Ok(DbEnv {
             surrealdb_url: get_var("SURREALDB_URL")?,
             surrealdb_user: get_var("SURREALDB_USER")?,
