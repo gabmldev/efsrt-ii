@@ -10,6 +10,8 @@ struct ApiConfig {
 
 #[tokio::main]
 async fn main() {
+    dotenvy::dotenv().ok();
+
     const API_PORT: u16 = 3000;
 
     tokio::spawn(async move {

@@ -22,14 +22,14 @@ async fn health() -> Json<Health> {
 
 #[derive(Deserialize)]
 struct EchoReq {
-    mensaje: String,
+    messagge: String,
 }
 #[derive(Serialize)]
 struct EchoRes {
-    eco: String,
+    echo: String,
 }
 async fn echo(Json(p): Json<EchoReq>) -> Json<EchoRes> {
-    Json(EchoRes { eco: p.mensaje })
+    Json(EchoRes { echo: p.messagge })
 }
 
 fn build_router() -> Router {
