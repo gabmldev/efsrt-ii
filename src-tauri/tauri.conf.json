@@ -19,7 +19,13 @@
       }
     ],
     "security": {
-      "csp": null
+      "csp": {
+        "default-src":  "'self'",
+        "connect-src":  "'self' http://<ip>:9000 http://localhost:3000",
+        "img-src":      "'self' http://<ip>:9000 blob: data:",
+        "media-src":    "'self' http://<ip>:9000 blob: data:",
+        "object-src":   "'none'"
+      }
     }
   },
   "bundle": {
