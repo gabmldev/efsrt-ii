@@ -11,5 +11,15 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
 
+  server: {
+    headers: {
+      "Cross-Origin-Opener-Policy": "same-origin",
+    },
+  },
+
+  build: {
+    concurrency: 4,
+  },
+
   integrations: [pdf()],
 });
