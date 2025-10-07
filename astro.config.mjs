@@ -11,5 +11,9 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
 
+  build: {
+    concurrency: 4,
+  },
+
   integrations: [pdf()],
 });
