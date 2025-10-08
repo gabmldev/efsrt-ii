@@ -14,7 +14,6 @@
     "@tauri-apps/api": "^2",
     "@tauri-apps/plugin-opener": "^2",
     "astro": "^5.14.1",
-    "astro-pdf": "^1.7.2",
     "tailwindcss": "^4.1.14"
   },
   "devDependencies": {
